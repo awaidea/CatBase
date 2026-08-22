@@ -1,0 +1,50 @@
+/* docs/stylesheets/extra.css */
+
+/* --- 1. 标题栏液态玻璃效果 --- */
+.md-header {
+    /* 半透明底色：黑色 15% 透明度，配合深色/彩色背景更明显 */
+    background: rgba(0, 0, 0, 0.15) !important;
+    
+    /* 核心毛玻璃效果：模糊 + 色彩饱和度增强 */
+    backdrop-filter: blur(16px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(16px) saturate(180%) !important; /* 兼容 Safari */
+    
+    /* 去除默认阴影，换上玻璃质感的细边框（高光） */
+    box-shadow: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+  }
+  
+  /* --- 2. 滚动时（粘性标题）保持玻璃质感 --- */
+  .md-header--shadow {
+    box-shadow: none !important;
+    /* 滚动时稍微加深一点点背景，保持文字可读性 */
+    background: rgba(0, 0, 0, 0.25) !important;
+  }
+  
+  /* --- 3. 标题栏所有文字、图标强制纯白 --- */
+  .md-header,
+  .md-header a,
+  .md-header .md-header__title,
+  .md-header .md-header__button,
+  .md-header .md-tabs__link,
+  .md-header .md-icon {
+    color: #ffffff !important;
+  }
+  
+  /* --- 4. 鼠标悬停保持白色 --- */
+  .md-header a:hover,
+  .md-header .md-header__button:hover {
+    color: #ffffff !important;
+    opacity: 0.8; /* 轻微降低透明度作为悬停反馈，更细腻 */
+  }
+  /* 针对浅色模式（默认），略微加深背景玻璃的底色 */
+[data-md-color-scheme="default"] .md-header {
+    background: rgba(0, 0, 0, 0.25) !important; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
+  }
+  
+  /* 针对深色模式（石板灰），保持通透感 */
+  [data-md-color-scheme="slate"] .md-header {
+    background: rgba(0, 0, 0, 0.15) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
