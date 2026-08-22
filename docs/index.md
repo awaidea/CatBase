@@ -5,7 +5,7 @@
 这确实是一个知识库，而且是个高中知识库。
 
 ## 快速开始
-转到 [Content](/content/)
+转到 [Content](/Content/)
 
 ## 需要工具
 转到 [学科工具](/tools/)
