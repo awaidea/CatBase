@@ -1,0 +1,11 @@
+/* 站点背景 */
+body {
+  /* 使用白色半透明遮罩叠加在背景图上 */
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url('/images/wallpaper.jpeg');
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
