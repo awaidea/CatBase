@@ -1,4 +1,4 @@
-site_name: EdgeCat's Knowledge Base
+site_name: CatBase
 site_url: https://study.catp.cc
 
 theme:
@@ -6,7 +6,13 @@ theme:
   language: zh
   logo: images/avatar.png    
   favicon: images/avatar.png
+  icon:
+    repo: fontawesome/brands/github  # 使用 GitHub 图标
 
 extra_css:
   - source/css/font.css
   - source/css/glass.css
+  - source/css/background.css
+
+repo_url: https://github.com/awaidea/CatBase
+repo_name: awaidea/CatBase
