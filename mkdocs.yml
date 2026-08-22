@@ -1,0 +1,11 @@
+site_name: EdgeCat's Knowledge Base
+site_url: https://study.catp.cc
+
+theme:
+  name: material
+  language: zh
+  logo: images/avatar.png    
+  favicon: images/avatar.png
+
+extra_css:
+  - source/css/font.css

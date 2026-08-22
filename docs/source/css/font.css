@@ -1,0 +1,7 @@
+/* 站点字体 */
+@import url("https://fontsapi.zeoseven.com/219/main/result.css");
+
+:root {
+  --md-text-font: "Child Fun Sans", sans-serif;
+  --md-code-font: "Child Fun Sans", monospace;
+}
